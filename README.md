@@ -10,7 +10,7 @@ Este projeto foi desenvolvido durante o curso de Desenvolvedor Web, da Hcode Tre
 
 ### 🎯 Layout
 
-Você pode conferir o layout do projeto por [aqui](public/assets/Orlando%2BCity.fw.png).
+Você pode conferir o layout do projeto por [aqui](web/public/assets/layout.png).
 
 ## Techs
 

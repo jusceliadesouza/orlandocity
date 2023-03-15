@@ -2,6 +2,7 @@
   --white: #f0f0f0;
   --black: #010101;
   --purple: #5e299a;
+  --yellow: #ebca72;
 }
 
 * {
@@ -137,7 +138,8 @@ header .header-black li a {
 
 #news {
   position: relative;
-  margin-top: -50px;
+  margin-top: -3.125rem;
+  margin-bottom: 4rem;
 }
 
 #news h2 {
@@ -148,7 +150,7 @@ header .header-black li a {
 }
 
 #news hr {
-  border: 2px solid #fde192;
+  border: 2px solid var();
   width: 12.5rem;
   margin: 0 auto;
 }
@@ -167,4 +169,26 @@ header .header-black li a {
 
 #news .thumbnails time {
   color: #a7a7a7;
+}
+
+#estatisticas {
+  background-color: var(--purple);
+  width: 100%;
+  height: 12.5rem;
+}
+
+#estatisticas p {
+  margin-top: 1rem;
+
+  font-weight: 300;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+
+#estatisticas p small {
+  color: var(--white);
+  font-size: 24px;
+  display: block;
 }

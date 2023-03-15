@@ -19,7 +19,10 @@ header {
   width: 100%;
 
   height: 9.375rem;
-  background-color: var(--purple);
+  background-color: rgba(91, 41, 154, 0.9);
+
+  z-index: 2;
+  position: relative;
 }
 
 header .container {
@@ -36,94 +39,6 @@ header .header-black li {
   margin: 0.25rem;
 
   background: url("../assets/clubs.png") no-repeat;
-}
-
-header .header-black li.club-01 {
-  background-position: 0px 0px;
-}
-
-header .header-black li.club-02 {
-  background-position: -48px 0px;
-}
-
-header .header-black li.club-03 {
-  background-position: -94px 0px;
-}
-
-header .header-black li.club-04 {
-  background-position: -139px 0px;
-}
-
-header .header-black li.club-05 {
-  background-position: -189px 0px;
-}
-
-header .header-black li.club-06 {
-  background-position: -239px 0px;
-}
-
-header .header-black li.club-07 {
-  background-position: -288px 0px;
-}
-
-header .header-black li.club-08 {
-  background-position: -335px 0px;
-}
-
-header .header-black li.club-09 {
-  background-position: -380px 0px;
-}
-
-header .header-black li.club-10 {
-  background-position: -429px 0px;
-}
-
-header .header-black li.club-11 {
-  background-position: -480px 0px;
-}
-
-header .header-black li.club-12 {
-  background-position: -528px 0px;
-}
-
-header .header-black li.club-13 {
-  background-position: -578px 0px;
-}
-
-header .header-black li.club-14 {
-  background-position: -628px 0px;
-}
-
-header .header-black li.club-15 {
-  background-position: -674px 0px;
-}
-
-header .header-black li.club-16 {
-  background-position: -718px 0px;
-}
-
-header .header-black li.club-17 {
-  background-position: -761px 0px;
-}
-
-header .header-black li.club-18 {
-  background-position: -806px 0px;
-}
-
-header .header-black li.club-19 {
-  background-position: -855px 0px;
-}
-
-header .header-black li.club-20 {
-  background-position: -900px 0px;
-}
-
-header .header-black li.club-21 {
-  background-position: -948px 0px;
-}
-
-header .header-black li.club-22 {
-  background-position: -996px 0px;
 }
 
 header .header-black li a {
@@ -188,4 +103,34 @@ header .header-black li a {
 
 #menu li.search .input-group {
   top: -0.125rem;
+}
+
+#banner {
+  width: 100%;
+  height: 728px;
+  top: -6.875rem;
+
+  background: url("../assets/banner.jpg") no-repeat center/cover;
+  background-position: 0px -100px;
+
+  color: var(--white);
+  position: relative;
+}
+
+#banner h1 {
+  margin-left: 3.125rem;
+  top: 18.75rem;
+  font-size: 5.75rem;
+
+  text-shadow: 2px 2px 2xp rgba(0, 0, 0, 0.45);
+  font-weight: 300;
+
+  position: relative;
+}
+
+#banner h1 small {
+  font-size: 2rem;
+  display: block;
+
+  font-weight: 700;
 }

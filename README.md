@@ -12,6 +12,10 @@ Este projeto foi desenvolvido durante o curso de Desenvolvedor Web, da Hcode Tre
 
 Você pode conferir o layout do projeto por [aqui](web/public/assets/layout.png).
 
+### 🦉 Deploy
+
+Este projeto está hospedado na plataforma [Vercel](https://vercel.com).Você pode conferir o funcionamento do projeto por [aqui](https://orlandocity.vercel.app).
+
 ## Techs
 
 - HTML

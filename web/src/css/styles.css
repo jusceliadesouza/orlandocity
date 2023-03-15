@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "OpenSans", sans-serif;
+  font-size: 1em;
+}
+
 header {
   width: 100%;
 
@@ -24,12 +29,6 @@ header .container {
 header .header-black {
   background-color: var(--black);
   height: 2.5rem;
-}
-
-header ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
 }
 
 header .header-black li {
@@ -84,47 +83,47 @@ header .header-black li.club-11 {
 }
 
 header .header-black li.club-12 {
-  background-position: -480px 0px;
-}
-
-header .header-black li.club-13 {
   background-position: -528px 0px;
 }
 
-header .header-black li.club-14 {
+header .header-black li.club-13 {
   background-position: -578px 0px;
 }
 
-header .header-black li.club-15 {
+header .header-black li.club-14 {
   background-position: -628px 0px;
 }
 
-header .header-black li.club-16 {
+header .header-black li.club-15 {
   background-position: -674px 0px;
 }
 
-header .header-black li.club-17 {
+header .header-black li.club-16 {
   background-position: -718px 0px;
 }
 
-header .header-black li.club-18 {
+header .header-black li.club-17 {
   background-position: -761px 0px;
 }
 
-header .header-black li.club-19 {
+header .header-black li.club-18 {
   background-position: -806px 0px;
 }
 
-header .header-black li.club-20 {
+header .header-black li.club-19 {
   background-position: -855px 0px;
 }
 
-header .header-black li.club-21 {
+header .header-black li.club-20 {
   background-position: -900px 0px;
 }
 
-header .header-black li.club-22 {
+header .header-black li.club-21 {
   background-position: -948px 0px;
+}
+
+header .header-black li.club-22 {
+  background-position: -996px 0px;
 }
 
 header .header-black li a {
@@ -135,6 +134,58 @@ header .header-black li a {
 }
 
 #logo {
-  top: -1.25rem;
+  top: 1.25rem;
   position: absolute;
+}
+
+#menu {
+  margin: 1rem 0;
+}
+
+#menu ul {
+  margin: 0;
+
+  display: flex;
+  justify-items: center;
+  gap: 2rem;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#menu li.search {
+  width: 11.5rem;
+}
+
+#menu li.search input {
+  height: 1.875rem;
+  line-height: 1.875rem;
+
+  background-color: var(--purple);
+  color: var(--white);
+
+  border: none;
+}
+
+#menu li.search input::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+#menu li.search button {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 0.1875rem;
+  top: -0.25rem;
+}
+
+#menu li.search .input-group {
+  top: -0.125rem;
 }

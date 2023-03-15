@@ -1,8 +1,9 @@
 :root {
   --white: #f0f0f0;
   --black: #010101;
+  --gray: #656565;
   --purple: #5e299a;
-  --yellow: #ebca72;
+  --yellow: #dbb856;
 }
 
 * {
@@ -137,26 +138,28 @@ header .header-black li a {
 }
 
 #news {
-  position: relative;
-  margin-top: -3.125rem;
+  margin-top: -4rem;
   margin-bottom: 4rem;
+  position: relative;
 }
 
-#news h2 {
+#news h2,
+#call-to-action h2 {
   font-size: 3rem;
   font-weight: 300;
   color: var(--purple);
   text-transform: uppercase;
 }
 
-#news hr {
-  border: 2px solid var();
+#news hr,
+#call-to-action hr {
+  border: 4px solid #dbb856;
   width: 12.5rem;
   margin: 0 auto;
 }
 
 #news .thumbnails {
-  margin-top: 1.25rem;
+  margin-top: 2rem;
 }
 
 #news .thumbnails h3 {
@@ -191,4 +194,45 @@ header .header-black li a {
   color: var(--white);
   font-size: 24px;
   display: block;
+}
+
+#call-to-action {
+  text-align: center;
+  margin: 6.5rem 0;
+}
+
+#call-to-action h2 {
+  text-transform: capitalize;
+}
+
+#call-to-action hr {
+  border: var(--yellow) solid 8px;
+}
+
+#call-to-action p {
+  margin-top:3.75rem;
+  margin-bottom: 2.5rem;
+  color: var(--gray);
+}
+
+#call-to-action .btn {
+  min-width: 164px;
+  height: 44px;
+  line-height: 32px;
+
+  border-radius: 0;
+}
+
+#call-to-action .btn-roxo {
+  color: var(--white);
+  background-color: var(--purple);
+  border-color: var(--purple);
+
+  margin-right: 2rem;
+}
+
+#call-to-action .btn-amarelo {
+  color: var(--white);
+  background-color: var(--yellow);
+  border-color: var(--yellow);
 }

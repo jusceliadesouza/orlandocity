@@ -56,6 +56,13 @@ header .header-black li a {
 #logo {
   top: 1.25rem;
   position: absolute;
+  z-index: 3;
+}
+
+#banner h1.efeito {
+  color: var(--purple);
+  font-size: 12em;
+  transition: 1s;
 }
 
 #menu {
@@ -82,6 +89,12 @@ header .header-black li a {
 
 #menu li.search {
   width: 11.5rem;
+  transition-timing-function: cubic-bezier(1, -.91, -.91, 1);
+  transition-duration: 1s;
+}
+
+#menu li.search.active {
+  width: 300px;
 }
 
 #menu li.search input {
@@ -92,6 +105,10 @@ header .header-black li a {
   color: var(--white);
 
   border: none;
+}
+
+#menu li.search.active input {
+  width: 300px;
 }
 
 #menu li.search input::placeholder {

@@ -192,6 +192,15 @@ header .header-black li a {
 
 #news .thumbnails time {
   color: var(--light-gray);
+  font-size: 1.125rem;
+}
+
+#news .thumbnails .item-inner {
+  padding: 0.625rem;
+}
+
+#news .thumbnails .item-inner img {
+  width: 100%;
 }
 
 #estatisticas {

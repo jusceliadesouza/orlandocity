@@ -252,10 +252,8 @@
       });
 
       $("#btn-play-pause").on("click", function () {
-        $(this).toggleClass("btn-success btn-danger");
-
         var video = $("video")[0];
-
+        
         if ($(this).hasClass("btn-success")) {
           $(this).text("Play");
           video.pause();
@@ -263,7 +261,8 @@
           $(this).text("Stop");
           video.play();
         }
-
+        
+        $(this).toggleClass("btn-success btn-danger");
       });
     });
   </script>

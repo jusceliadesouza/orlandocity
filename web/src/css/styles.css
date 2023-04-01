@@ -266,6 +266,11 @@ header .header-black li a {
   border-color: var(--yellow);
 }
 
+.video {
+  margin: 2rem auto;
+  width: 60%;
+}
+
 footer {
   margin-top: 110px;
 }
@@ -396,3 +401,4 @@ footer .list-socials i {
   font-size: 1rem;
   margin: 7px auto;
 }
+

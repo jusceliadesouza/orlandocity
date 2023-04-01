@@ -128,8 +128,35 @@
         <hr>
       </div>
 
-      <div class="row">
-        <video src="assets/mp4/highlights.mp4"  controls poster="assets/highlights.jpg"></video>
+      <div class="row video">
+        <video src="assets/mp4/highlights.mp4" controls poster="assets/highlights.jpg"></video>
+
+        <input type="range" min="0" max="100" step="0.1" id="volume" value="50">
+
+        <button type="button" id="btn-play-pause" class="btn btn-success" data-toggle="collapse">PLAY</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="news" class="container">
+    <div class="row text-center">
+      <h2>Latest News</h2>
+      <hr>
+    </div>
+
+    <div class="row thumbnails owl-carousel owl-theme">
+      <div class="item">
+        <div class="item-inner" data-video="highlights">
+          <img src="assets/highlights.jpg" alt="Noticia">
+          <h3>Highlights</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-inner" data-video="Orlando_City_Foundation_2015">
+          <img src="assets/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+          <h3>Orlando City Foundation 2015</h3>
+        </div>
       </div>
     </div>
   </div>
@@ -204,7 +231,7 @@
 
   </footer>
 
-  <!-- Scripts -->
+  <!-- SCRIPTS -->
 
   <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
     integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
@@ -212,39 +239,33 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="lib/owlcarousel/dist/owl.carousel.min.js"></script>
+  <script src="js/efeitos.js"></script>
   <script>
-    $(document).ready(function () {
-      $("#logo").on("mouseover", function () {
-        $("#banner h1").addClass("efeito")
-      }).on("mouseout", function () {
-        $("#banner h1").removeClass("efeito")
+    $(".thumbnails .item-inner").on("click", function () {
+      $('video').attr({
+        'src': "assets/mp4/" + $(this).data('video') + ".mp4",
+        'poster': "assets/" + $(this).data('video') + ".jpg"
       });
 
-      $("#input-search").on("focus", function () {
-        $("li.search").addClass('active')
-      }).on("blur", function () {
-        $("li.search").removeClass('active')
+      $("#volume").on("mousemove", function () {
+        $("video")[0].volume = parseFloat($(this).val());
       });
 
-      $(".thumbnails").owlCarousel({
-        loop: true,
-        margin: 10,
-        // nav: true,
-        // navText: ["Anterior", "Próximo"],
-        responsive: {
-          0: {
-            items: 1
-          },
-          480: {
-            items: 3
-          },
-          768: {
-            items: 4
-          }
+      $("#btn-play-pause").on("click", function () {
+        $(this).toggleClass("btn-success btn-danger");
+
+        var video = $("video")[0];
+
+        if ($(this).hasClass("btn-success")) {
+          $(this).text("Play");
+          video.pause();
+        } else {
+          $(this).text("Stop");
+          video.play();
         }
-      })
-    });
 
+      });
+    });
   </script>
 </body>
 

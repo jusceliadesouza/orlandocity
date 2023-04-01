@@ -133,7 +133,7 @@
 
         <input type="range" min="0" max="100" step="0.1" id="volume" value="50">
 
-        <button type="button" id="btn-play-pause" class="btn btn-success" data-toggle="collapse">PLAY</button>
+        <button type="button" id="btn-play-pause" class="btn btn-success">PLAY</button>
       </div>
     </div>
   </div>
@@ -253,15 +253,15 @@
 
       $("#btn-play-pause").on("click", function () {
         var video = $("video")[0];
-        
+
         if ($(this).hasClass("btn-success")) {
-          $(this).text("Play");
-          video.pause();
-        } else {
           $(this).text("Stop");
           video.play();
+        } else {
+          $(this).text("Play");
+          video.pause();
         }
-        
+
         $(this).toggleClass("btn-success btn-danger");
       });
     });
